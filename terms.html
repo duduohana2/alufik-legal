@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Alufik</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F8FAFC;
+      color: #1A1A3D;
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    .toggle {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      background: #F3E8FF;
+      padding: 4px;
+      border-radius: 12px;
+    }
+    .toggle button {
+      flex: 1;
+      padding: 10px 16px;
+      border: none;
+      background: transparent;
+      color: #7C3AED;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .toggle button.active {
+      background: #7C3AED;
+      color: #fff;
+    }
+    h1 { color: #7C3AED; font-size: 28px; margin-bottom: 8px; }
+    .content[dir="rtl"] { text-align: right; }
+    .content { white-space: pre-wrap; font-size: 16px; line-height: 1.7; }
+    .back {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 12px 20px;
+      background: #F3E8FF;
+      color: #7C3AED;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .back:hover { background: #E9D5FF; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="toggle">
+      <button id="btn-en" class="active" onclick="show('en')">English</button>
+      <button id="btn-he" onclick="show('he')">עברית</button>
+    </div>
+
+    <div id="content-en" class="content" dir="ltr"></div>
+    <div id="content-he" class="content" dir="rtl" style="display: none;"></div>
+
+    <a href="./" class="back">← Back</a>
+  </div>
+
+  <script>
+    const EN = `Terms of Service — Alufik
+
+Effective date: May 5, 2026
+
+1. Acceptance of terms
+Using the Alufik app constitutes acceptance of these terms. If you don't agree — please don't use the app.
+
+2. Who may use it
+• Parents — 18 and over.
+• Children — any age, only after the parent has consented on the child's behalf and assigned them a personal entry code.
+
+3. Your account
+• You are responsible for keeping your password confidential.
+• Don't share the parent account with other users.
+• We recommend setting and updating the child's PIN periodically.
+
+4. Permitted use
+• Personal, family, non-commercial use.
+• You may not copy, modify, distribute, or sell the app.
+• You may not reverse engineer or bypass security mechanisms.
+
+5. Child content
+The parent is responsible for all tasks, prizes, and images uploaded to the child's account. Don't upload content that could harm the child. We reserve the right to remove content that violates these terms.
+
+6. Friends between children
+Children can add other children as "friends" via a code. The parent may remove friends from the child's account at any time.
+
+7. Paid features
+The app is fully free today. If we add premium features in the future, we will give advance notice and won't charge existing users.
+
+8. Account removal
+When a parent account is deleted — all linked child accounts are also deleted. Deletion is irreversible after 30 days.
+
+9. Limitation of liability
+The app is provided "AS-IS". We are not liable for data loss caused by malfunctions, changes in children's behavior, or social experiences between children.
+
+10. Changes to terms
+We update terms from time to time. Material changes will be presented in-app at least 14 days in advance.
+
+11. Governing law and jurisdiction
+Israeli law applies to these terms. Exclusive jurisdiction lies with the Tel Aviv courts.
+
+12. Contact us
+To reach out, use the "Contact us" button at the bottom of the screen in the Alufik app, or email duduohana2@gmail.com.`;
+
+    const HE = `תנאי שימוש — אלופיק
+
+תאריך תחולה: 5 במאי 2026
+
+1. הסכמה לתנאים
+עצם השימוש באפליקציית אלופיק מהווה הסכמה לתנאי שימוש אלה. אם אינכם מסכימים — אנא הימנעו משימוש.
+
+2. מי רשאי להשתמש
+• הורים — בני 18 ומעלה.
+• ילדים — בכל גיל, רק לאחר שההורה הסכים בעבור הילד והקצה לו קוד כניסה אישי.
+
+3. החשבון שלכם
+• הינכם אחראים לשמירת סודיות הסיסמה שלכם.
+• אסור לחלוק את חשבון ההורה עם משתמשים אחרים.
+• מומלץ להגדיר ולעדכן את ה־PIN של הילד מעת לעת.
+
+4. שימוש מותר
+• שימוש אישי, משפחתי, לא מסחרי.
+• אסור להעתיק, לשנות, להפיץ או למכור את האפליקציה.
+• אסור לבצע reverse engineering או לעקוף מנגנוני אבטחה.
+
+5. תוכן הילד
+ההורה אחראי על כל המשימות, הפרסים והתמונות שמועלים לחשבון הילד. אסור להעלות תוכן שיכול להזיק לילד. אנו שומרים את הזכות להסיר תוכן שמפר את התקנון.
+
+6. חברים בין ילדים
+ילדים יכולים להוסיף ילדים אחרים כ"חברים" באמצעות קוד. ההורה רשאי בכל עת להסיר חברים מחשבון הילד.
+
+7. תכונות בתשלום
+האפליקציה חינם במלואה כיום. אם בעתיד נוסיף תכונות פרימיום, נודיע מראש ולא נחיב את המשתמשים הקיימים.
+
+8. הסרת חשבון
+בעת מחיקת חשבון הורה — נמחקים גם כל חשבונות הילדים המקושרים אליו. מחיקה לא הפיכה לאחר 30 יום.
+
+9. הגבלת אחריות
+האפליקציה מסופקת "כפי שהיא" (AS-IS). איננו אחראים על הפסד נתונים שנגרם מתקלות, שינויים בהתנהגות של ילדים, או חוויות חברתיות בין ילדים.
+
+10. שינויים בתנאים
+נעדכן את התנאים מעת לעת. שינויים מהותיים יוצגו בתוך האפליקציה לפחות 14 ימים מראש.
+
+11. דין ומקום שיפוט
+החוק הישראלי חל על תנאים אלה. סמכות שיפוט בלעדית לבתי המשפט בתל אביב.
+
+12. צרו קשר
+לפנייה אלינו, השתמשו בכפתור "צור קשר" בתחתית המסך באפליקציה, או שלחו מייל ל־duduohana2@gmail.com.`;
+
+    document.getElementById('content-en').textContent = EN;
+    document.getElementById('content-he').textContent = HE;
+
+    function show(lang) {
+      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('content-he').style.display = lang === 'he' ? 'block' : 'none';
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-he').classList.toggle('active', lang === 'he');
+    }
+  </script>
+</body>
+</html>

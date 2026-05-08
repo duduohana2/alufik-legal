@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Alufik</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F8FAFC;
+      color: #1A1A3D;
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    .toggle {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      background: #F3E8FF;
+      padding: 4px;
+      border-radius: 12px;
+    }
+    .toggle button {
+      flex: 1;
+      padding: 10px 16px;
+      border: none;
+      background: transparent;
+      color: #7C3AED;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .toggle button.active {
+      background: #7C3AED;
+      color: #fff;
+    }
+    h1 { color: #7C3AED; font-size: 28px; margin-bottom: 8px; }
+    .date { color: #94A3B8; font-size: 14px; margin-bottom: 24px; }
+    .content[dir="rtl"] { text-align: right; }
+    .content[dir="rtl"] h1 { text-align: right; }
+    .content { white-space: pre-wrap; font-size: 16px; line-height: 1.7; }
+    .back {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 12px 20px;
+      background: #F3E8FF;
+      color: #7C3AED;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .back:hover { background: #E9D5FF; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="toggle">
+      <button id="btn-en" class="active" onclick="show('en')">English</button>
+      <button id="btn-he" onclick="show('he')">עברית</button>
+    </div>
+
+    <div id="content-en" class="content" dir="ltr"></div>
+    <div id="content-he" class="content" dir="rtl" style="display: none;"></div>
+
+    <a href="./" class="back">← Back</a>
+  </div>
+
+  <script>
+    const EN = `Privacy Policy — Alufik
+
+Effective date: May 5, 2026
+
+1. Who we are
+Alufik is a family app for managing tasks and building positive habits in children.
+
+2. Who the app is for
+• Parents — adults who create an account, assign tasks to their children and approve them.
+• Children — users under 18 who use the app only with parental consent.
+Children under 13 are permitted to use the app only with the parent's explicit, in-app consent at registration.
+
+3. Data we collect
+3.1 Parent: name, email, password (hashed), optional profile photo.
+3.2 Child (collected by the parent): first name, last name, date of birth, gender, profile photo, unique entry code and a 4-digit PIN.
+3.3 In-app activity: completed tasks, stars, medals, streaks, unlocked rewards, friends.
+3.4 Technical data: device identifier, IP address (for security logs), OS version.
+
+4. What we do NOT collect
+• Geographic location
+• Contacts
+• Microphone or camera access (other than user-initiated profile photo upload)
+• Browsing data from other websites
+• Payment information (the app is free)
+
+5. How we use the data
+To run the app's services, send push notifications when a task is assigned or approved, diagnose issues, and comply with legal requirements.
+We do not sell, rent, or share your data with third parties.
+
+6. Children — COPPA / GDPR-K / Israeli Privacy Law
+The app clearly states that children under 13 require parental approval. Every child-account creation requires the parent to tick an explicit consent box.
+Parents can at any time view the data, delete the account, or request an export of all data.
+
+7. Data retention
+Active account: retained without time limit.
+Inactive account for over 24 months: email warning, then automatic deletion.
+Deleted account: full deletion within 30 days.
+
+8. Security
+• All communication is encrypted (HTTPS/TLS).
+• Passwords are stored as hashes.
+• Role-based access controls.
+• Automatic daily backups for 14 days.
+
+9. Sharing with third parties
+• Google Firebase (storage, auth, notifications) — EU/US.
+• Expo (push tokens) — US.
+• Sentry (anonymous crash reports) — EU.
+We do not transfer data to authorities except under judicial order.
+
+10. Policy changes
+We will notify you in-app at least 14 days before any material changes.
+
+11. Contact us
+To reach out, use the "Contact us" button at the bottom of the screen in the Alufik app, or email duduohana2@gmail.com.`;
+
+    const HE = `מדיניות פרטיות — אלופיק
+
+תאריך תחולה: 5 במאי 2026
+
+1. מי אנחנו
+אלופיק היא אפליקציה משפחתית לניהול משימות וטיפוח הרגלים חיוביים אצל ילדים.
+
+2. למי האפליקציה מיועדת
+• הורים — משתמשים מבוגרים שיוצרים חשבון, מקצים משימות לילדיהם ומאשרים אותן.
+• ילדים — משתמשים מתחת לגיל 18 שמשתמשים באפליקציה רק עם הסכמת הורה.
+ילדים מתחת לגיל 13 מורשים להשתמש באפליקציה רק באישור מפורש של ההורה דרך תהליך הרישום.
+
+3. אילו נתונים אנחנו אוספים
+3.1 הורה: שם, אימייל, סיסמה (מוצפנת), תמונת פרופיל אופציונלית.
+3.2 ילד (נאסף על ידי ההורה): שם פרטי, שם משפחה, תאריך לידה, מין, תמונת פרופיל, קוד כניסה ייחודי ו־PIN בן 4 ספרות.
+3.3 פעילות בתוך האפליקציה: משימות שבוצעו, כוכבים, מדליות, רצפים, פרסים שנפתחו, חברים.
+3.4 נתונים טכניים: מזהה מכשיר, כתובת IP (לוגים אבטחתיים), גרסת מערכת ההפעלה.
+
+4. מה אנחנו לא אוספים
+• מיקום גיאוגרפי
+• אנשי קשר
+• גישה למיקרופון או למצלמה (פרט להעלאת תמונת פרופיל יזומה)
+• נתוני אינטרנט מאתרים אחרים
+• פרטי תשלום (האפליקציה חינם)
+
+5. למה אנחנו משתמשים בנתונים
+להפעיל את שירותי האפליקציה, לשלוח התראות Push כשמשימה נכנסת או אושרה, לאתר תקלות, ולעמוד בדרישות חוק.
+אנחנו לא מוכרים, לא משכירים ולא משתפים את הנתונים שלכם עם צדדים שלישיים.
+
+6. ילדים — COPPA / GDPR-K / חוק הגנת הפרטיות
+האפליקציה מציינת בבירור שילדים מתחת לגיל 13 חייבים אישור הורי. כל יצירת חשבון ילד דורשת שההורה יסמן תיבת הסכמה מפורשת.
+ההורה רשאי בכל עת לצפות במידע, למחוק חשבון, או לבקש ייצוא של כל המידע.
+
+7. שמירת נתונים
+חשבון פעיל: שמירה ללא הגבלת זמן.
+חשבון לא פעיל מעל 24 חודשים: התראת מייל ואז מחיקה אוטומטית.
+חשבון שנמחק: מחיקה מלאה תוך 30 יום.
+
+8. אבטחה
+• כל התקשורת מוצפנת (HTTPS/TLS).
+• סיסמאות מאוחסנות ב־hash.
+• חוקי גישה מבוססי תפקיד.
+• גיבוי יומי אוטומטי ל־14 ימים.
+
+9. שיתוף עם צדדים שלישיים
+• Google Firebase (אחסון, אימות, התראות) — EU/US.
+• Expo (Push tokens) — US.
+• Sentry (דיווחי תקלות אנונימי) — EU.
+לא מועבר מידע לרשויות אלא בצו שיפוטי.
+
+10. שינויים במדיניות
+נודיע לכם בתוך האפליקציה לפחות 14 ימים לפני שינויים מהותיים.
+
+11. צרו קשר
+לפנייה אלינו, השתמשו בכפתור "צור קשר" בתחתית המסך באפליקציה, או שלחו מייל ל־duduohana2@gmail.com.`;
+
+    document.getElementById('content-en').textContent = EN;
+    document.getElementById('content-he').textContent = HE;
+
+    function show(lang) {
+      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('content-he').style.display = lang === 'he' ? 'block' : 'none';
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-he').classList.toggle('active', lang === 'he');
+    }
+  </script>
+</body>
+</html>
